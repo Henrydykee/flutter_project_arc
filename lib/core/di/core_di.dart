@@ -3,7 +3,6 @@
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:localstorage/localstorage.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import '../data/database/db_config.dart';
 import '../data/memory/cache_helpers.dart';
 import '../data/network/network_config.dart';
 import '../data/network/network_interceptor.dart';

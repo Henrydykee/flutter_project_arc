@@ -1,14 +1,26 @@
-import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'response_model.g.dart';
-part 'response_model.freezed.dart';
 
-@JsonSerializable(genericArgumentFactories: true)
-@freezed
-class ResponseModel<T> with _$ResponseModel<T> {
-  const factory ResponseModel({
-    @JsonKey(name: 'status') required String? status,
-    @JsonKey(name: 'message') required String? message,
-    @JsonKey(name: 'data') required T? data,
-  }) = _ResponseModel<T>;
+class ResponseModel<T> {
+  final String? status;
+  final String? message;
+  final T? data;
+
+  const ResponseModel({
+    required this.status,
+    required this.message,
+    required this.data,
+  });
+
+  /// The [fromJsonT] function converts the JSON representation of T into an instance of T.
+  factory ResponseModel.fromJson(
+      Map<String, dynamic> json,
+      T Function(Object? json) fromJsonT,
+      ) {
+    return ResponseModel(
+      status: json['status'] as String?,
+      message: json['message'] as String?,
+      data: json['data'] == null ? null : fromJsonT(json['data']),
+    );
+  }
 }
+

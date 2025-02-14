@@ -44,7 +44,7 @@ class NetworkServiceImpl implements NetworkService {
   }
 
   /// Add an interceptor to the internal network request handler
-  registerInterceptor(NetworkInterceptor interceptor) {
+  registerInterceptor(NetworkInterceptor? interceptor) {
     if (interceptor == null) {
       throw Exception(
         "Interceptor cannot be null",
@@ -55,7 +55,7 @@ class NetworkServiceImpl implements NetworkService {
   }
 
   /// Add list of interceptors to the internal network request handler
-  registerInterceptors(List<NetworkInterceptor> interceptors) {
+  registerInterceptors(List<NetworkInterceptor>? interceptors) {
     if (interceptors == null) {
       throw Exception(
         "Interceptors cannot be null",
@@ -82,7 +82,7 @@ class NetworkServiceImpl implements NetworkService {
 
       return NetworkServiceResponse(
           result: NetworkResult.SUCCESS, data: response.data);
-    } on DioError catch (e, trace) {
+    } on DioException catch (e, trace) {
       logger.e(e);
       return handleException(e, trace);
     }
@@ -103,7 +103,7 @@ class NetworkServiceImpl implements NetworkService {
         result: NetworkResult.SUCCESS,
         data: response.data,
       );
-    } on DioError catch (e, trace) {
+    } on DioException catch (e, trace) {
       logger.e(e);
       return handleException(e, trace);
     }
@@ -126,7 +126,7 @@ class NetworkServiceImpl implements NetworkService {
         result: NetworkResult.SUCCESS,
         data: response.data,
       );
-    } on DioError catch (e, trace) {
+    } on DioException catch (e, trace) {
       logger.e(e);
       return handleException(e, trace);
     }
@@ -150,7 +150,7 @@ class NetworkServiceImpl implements NetworkService {
         result: NetworkResult.SUCCESS,
         data: response.data,
       );
-    } on DioError catch (e, trace) {
+    } on DioException catch (e, trace) {
       logger.e(e);
       return handleException(e, trace);
     }
@@ -173,7 +173,7 @@ class NetworkServiceImpl implements NetworkService {
         result: NetworkResult.SUCCESS,
         data: response.data,
       );
-    } on DioError catch (e, trace) {
+    } on DioException catch (e, trace) {
       logger.e(e.message);
       return handleException(e, trace);
     }

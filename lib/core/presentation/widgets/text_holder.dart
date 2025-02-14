@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
@@ -136,7 +135,7 @@ class MoneyTextHolder extends StatelessWidget {
     return GestureDetector(
       onTap: onTap as void Function()?,
       child: Text(
-        formattedAmount!,
+        formattedAmount,
         maxLines: maxLines,
         overflow: textOverflow,
         textAlign: align,

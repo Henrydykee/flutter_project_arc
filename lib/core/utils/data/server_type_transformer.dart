@@ -1,3 +1,5 @@
+// ignore_for_file: unnecessary_cast
+
 class ServerTypeTransformer {
   static toDoubleFromServer(dynamic anyType) {
     if (anyType == null) return null;

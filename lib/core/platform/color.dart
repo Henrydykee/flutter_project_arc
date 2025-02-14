@@ -33,4 +33,5 @@ class AllaweeBusinessColor{
   static const blue =  Color(0xFF2F80ED);
   static const negative_bg = Color(0xFFFEE6E6);
   static const red = Color(0xFFE84343);
+  
 }

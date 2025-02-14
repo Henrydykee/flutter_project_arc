@@ -35,8 +35,8 @@ class DeviceManager {
 
   Future<RegistrationRequestModel> getiOSDeviceInfo(DeviceInfoPlugin deviceInfoPlugin, String ipAddress) async {
     dynamic iosData = await deviceInfoPlugin.iosInfo;
-    if (ipAddress == null) {
-      ipAddress = (await _iOSGetIPAddress())!;
+    if (ipAddress.isEmpty) {
+      ipAddress = (await _iOSGetIPAddress()) ?? '';
     }
     String deviceId =  await inject<SecuredStorage>().get(key: SecureStorageStrings.DEVICE_ID);
     if (StringUtils.isNullOrEmpty(deviceId)) {

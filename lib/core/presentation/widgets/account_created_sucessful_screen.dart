@@ -1,13 +1,11 @@
-import 'dart:async';
 import 'package:allawee_business/core/platform/color.dart';
 import 'package:allawee_business/core/presentation/widgets/text_holder.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:provider/provider.dart';
 import 'allawee_app_bar.dart';
 
 class AccountCreatedSuccessfulScreen extends StatefulWidget {
-  String? path;
+  final String? path;
   AccountCreatedSuccessfulScreen({super.key, this.path});
 
   @override

@@ -1,4 +1,3 @@
-
 import 'package:allawee_business/core/presentation/widgets/text_holder.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -35,7 +34,10 @@ class AllaweeAppBar extends StatelessWidget implements PreferredSize {
                 image ?? "assets/svg/back_button.svg",
                 height: 30,
                 width: 30,
-                color: color ?? AllaweeBusinessColor.dark_blue,
+                colorFilter: ColorFilter.mode(
+                  color ?? AllaweeBusinessColor.dark_blue,
+                  BlendMode.srcIn
+                ),
               )),
           SizedBox(
             width: 20,
@@ -47,7 +49,6 @@ class AllaweeAppBar extends StatelessWidget implements PreferredSize {
   }
 
   @override
-  // TODO: implement child
   Widget get child => throw UnimplementedError();
 
   @override
@@ -144,7 +145,6 @@ class AllaweeSecondaryAppBar extends StatelessWidget implements PreferredSize {
   }
 
   @override
-// TODO: implement child
   Widget get child => throw UnimplementedError();
 
   @override

@@ -63,7 +63,6 @@ NetworkFailure getNetworkFailureFromApiFailure(
   dynamic errorCode,
 }) {
   String? exceptionMessage = exception!.exceptionMessage;
-//TODO Understand error model from backend to proceed
   if (exceptionMessage != null) {
 
     // bugsnag.notify(exceptionMessage, stackTrace);
