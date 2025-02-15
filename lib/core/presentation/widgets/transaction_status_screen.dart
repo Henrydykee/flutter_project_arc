@@ -1,7 +1,7 @@
-// import 'package:allawee_app/core/presentation/widgets/text_holder.dart';
-// import 'package:allawee_app/features/onboarding/presentation/state/onboarding_provider.dart';
-// import 'package:allawee_app/features/transaction/data/model/add_beneficiaries_request_model.dart';
-// import 'package:allawee_app/features/transaction/presentation/state/transaction_provider.dart';
+// import 'package:newproject_app/core/presentation/widgets/text_holder.dart';
+// import 'package:newproject_app/features/onboarding/presentation/state/onboarding_provider.dart';
+// import 'package:newproject_app/features/transaction/data/model/add_beneficiaries_request_model.dart';
+// import 'package:newproject_app/features/transaction/presentation/state/transaction_provider.dart';
 // import 'package:flutter/material.dart';
 // import 'package:flutter_switch/flutter_switch.dart';
 // import 'package:gap/gap.dart';
@@ -11,7 +11,7 @@
 // import '../../../features/authentication/presentation/state/authentication_provider.dart';
 // import '../../../features/home/presentation/pages/nav_bar.dart';
 // import '../../di/di_config.dart';
-// import 'allawee_app_bar.dart';
+// import 'newproject_app_bar.dart';
 // import 'button.dart';
 //
 // class TransactionStatusScreen extends StatefulWidget {
@@ -65,7 +65,7 @@
 //     }
 //     return Scaffold(
 //       backgroundColor: Color(0xFF0B1032),
-//       appBar: AllaweeSecondaryAppBar(
+//       appBar: newprojectSecondaryAppBar(
 //         color: Color(0xFF0B1032),
 //         allowPop: false,
 //       ),
@@ -189,11 +189,11 @@
 //                     Gap(24),
 //                   ],
 //                 ),
-//                 AllaweeButton(
+//                 newprojectButton(
 //                   title: "Done",
 //                   onTap: () {
 //                     Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) =>
-//                         AllaweeNavBar()), (Route<dynamic> route) => false);
+//                         newprojectNavBar()), (Route<dynamic> route) => false);
 //                   },
 //                 ),
 //                 Gap(30)

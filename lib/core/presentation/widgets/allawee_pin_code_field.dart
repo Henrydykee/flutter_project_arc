@@ -4,7 +4,7 @@ import 'package:pin_code_fields/pin_code_fields.dart';
 
 import '../../platform/color.dart';
 
-class AllaweePinCode extends StatelessWidget {
+class newprojectPinCode extends StatelessWidget {
   final onCompleted;
 
   // final Function()? onChanged;
@@ -15,7 +15,7 @@ class AllaweePinCode extends StatelessWidget {
   final bool ignoreTouch;
 
 
-  AllaweePinCode({this.onCompleted, this.controller, this.onChanged, this.focusNode, this.length,this.ignoreTouch = true});
+  newprojectPinCode({this.onCompleted, this.controller, this.onChanged, this.focusNode, this.length,this.ignoreTouch = true});
 
   @override
   Widget build(BuildContext context) {
@@ -34,7 +34,7 @@ class AllaweePinCode extends StatelessWidget {
         length: length ?? 4,
         hintCharacter: "_",
         hintStyle: TextStyle(
-          color: AllaweeBusinessColor.grey
+          color: newprojectColor.grey
         ),
         cursorColor: Colors.black,
         pinTheme: PinTheme(

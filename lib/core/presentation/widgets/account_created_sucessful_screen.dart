@@ -1,5 +1,5 @@
-import 'package:allawee_business/core/platform/color.dart';
-import 'package:allawee_business/core/presentation/widgets/text_holder.dart';
+import 'package:new_project/core/platform/color.dart';
+import 'package:new_project/core/presentation/widgets/text_holder.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'allawee_app_bar.dart';
@@ -20,7 +20,7 @@ class _AccountCreatedSuccessfulScreenState extends State<AccountCreatedSuccessfu
     //     () =>
     //         Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (context) =>
     //         widget.path == "pascodeCreated" || widget.path == "pascodeCreatedInapp" || widget.path == "ChangePassword"
-    //             ? AllaweeNavBar()
+    //             ? newprojectNavBar()
     //             : LoginScreen() ), (Route<dynamic> route) => false));
 
 
@@ -32,9 +32,9 @@ class _AccountCreatedSuccessfulScreenState extends State<AccountCreatedSuccessfu
     //  Provider.of<OnboardingProvider>(context, listen: false).getUser();
     });
     return Scaffold(
-      backgroundColor: AllaweeBusinessColor.dark_blue,
-      appBar: AllaweeSecondaryAppBar(
-        color: AllaweeBusinessColor.dark_blue,
+      backgroundColor: newprojectColor.dark_blue,
+      appBar: SecondaryAppBar(
+        color: newprojectColor.dark_blue,
         allowPop: false,
       ),
       body: Padding(

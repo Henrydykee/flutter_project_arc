@@ -4,24 +4,24 @@
 // import 'package:webview_flutter/webview_flutter.dart';
 //
 // import '../../platform/color.dart';
-// import 'allawee_app_bar.dart';
+// import 'newproject_app_bar.dart';
 //
-// class AllaweeWebView extends StatefulWidget {
+// class newprojectWebView extends StatefulWidget {
 //   final String? title;
 //   final String? url;
 //
 //
-//   const AllaweeWebView({
+//   const newprojectWebView({
 //     Key? key,
 //     this.title,
 //     this.url,
 //   }) : super(key: key);
 //
 //   @override
-//   _AllaweeWebViewState createState() => _AllaweeWebViewState();
+//   _newprojectWebViewState createState() => _newprojectWebViewState();
 // }
 //
-// class _AllaweeWebViewState extends State<AllaweeWebView> {
+// class _newprojectWebViewState extends State<newprojectWebView> {
 //
 //   late bool _isLoadingPage;
 //   late WebViewController _webController;
@@ -90,7 +90,7 @@
 //   @override
 //   Widget build(BuildContext context) {
 //     return Scaffold(
-//       appBar: AllaweeSecondaryAppBar(
+//       appBar: newprojectSecondaryAppBar(
 //         title: widget.title,
 //         textColor: Colors.black,
 //       ),
@@ -104,7 +104,7 @@
 //             color: Colors.white,
 //             child: Center(
 //                 child: CircularProgressIndicator(
-//                   valueColor: AlwaysStoppedAnimation<Color>(AllaweeBusinessColor.green),
+//                   valueColor: AlwaysStoppedAnimation<Color>(newprojectColor.green),
 //                 )),
 //           ),
 //

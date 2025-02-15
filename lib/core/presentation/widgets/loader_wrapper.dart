@@ -29,10 +29,10 @@ class _LoaderWrapperState extends State<LoaderWrapper> {
                   height: 40,
                   width: 40,
                   child: CircularProgressIndicator(
-                    backgroundColor: AllaweeBusinessColor.white,
+                    backgroundColor: newprojectColor.white,
                     strokeWidth: 3,
                     valueColor:
-                        AlwaysStoppedAnimation<Color>(AllaweeBusinessColor.green),
+                        AlwaysStoppedAnimation<Color>(newprojectColor.green),
                   ),
                 ),
               ),

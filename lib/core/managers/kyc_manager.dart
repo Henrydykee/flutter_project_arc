@@ -1,8 +1,8 @@
 // // import 'package:aiprise_flutter_sdk/aiprise_flutter_sdk.dart';
-// import 'package:allawee_app/core/presentation/widgets/allawee_app_bar.dart';
-// import 'package:allawee_app/core/presentation/widgets/loading_screen.dart';
+// import 'package:newproject_app/core/presentation/widgets/newproject_app_bar.dart';
+// import 'package:newproject_app/core/presentation/widgets/loading_screen.dart';
 // import 'package:flutter/material.dart';
-// import 'package:allawee_app/core/platform/string_constants.dart' as Constants;
+// import 'package:newproject_app/core/platform/string_constants.dart' as Constants;
 //
 // import '../data/enums/type_enums.dart';
 // import '../platform/env_config.dart';
@@ -17,11 +17,11 @@
 //   Widget build(BuildContext context) {
 //     String env = EnvConfig.instance!.flavor.toString();
 //     return Scaffold(
-//         appBar: AllaweeSecondaryAppBar(),
+//         appBar: newprojectSecondaryAppBar(),
 //         body: AiPriseFrame(
 //           mode: env == Env.STAGING.toString() ? AiPriseEnvironment.sandbox : AiPriseEnvironment.production, // sandbox or production
 //           templateID: testType == "BVN" ? Constants.APIRISE_BVN : Constants.APIRISE_GOVT_ID,
-//           callbackURL: testType == "BVN" ? 'https://pasrv-stg.allawee.com/kyc/call-back/bvn' : "https://pasrv.allawee.com/kyc/call-back/bvn",
+//           callbackURL: testType == "BVN" ? 'https://pasrv-stg.newproject.com/kyc/call-back/bvn' : "https://pasrv.newproject.com/kyc/call-back/bvn",
 //           onStart: (sessionID) {},
 //           onSuccess: (sessionID) {
 //             Navigator.pushAndRemoveUntil(

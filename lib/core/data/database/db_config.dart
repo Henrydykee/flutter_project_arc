@@ -1,4 +1,4 @@
-// import 'package:allawee_app/features/authentication/domain/db/dao/authentication_dao.dart';
+// import 'package:newproject_app/features/authentication/domain/db/dao/authentication_dao.dart';
 // import 'package:drift/drift.dart';
 // import 'package:flutter/foundation.dart';
 // import '../../../features/authentication/domain/db/entities/authentication_table.dart';

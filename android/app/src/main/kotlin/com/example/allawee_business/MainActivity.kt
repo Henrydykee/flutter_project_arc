@@ -1,4 +1,4 @@
-package com.example.allawee_business
+package com.example.new_project
 
 import io.flutter.embedding.android.FlutterActivity
 

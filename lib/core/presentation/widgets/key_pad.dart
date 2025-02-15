@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:local_auth/local_auth.dart';
 
-class AllaweeKeyPad extends StatelessWidget {
+class newprojectKeyPad extends StatelessWidget {
   final onKeyPress;
   final String? path;
   final Color? keyColor;
@@ -12,7 +12,7 @@ class AllaweeKeyPad extends StatelessWidget {
   final Widget? leftAction;
   final Widget? rightAction;
 
-  AllaweeKeyPad(
+  newprojectKeyPad(
       {@required this.onKeyPress,
       this.visible = false,
         this.path,
@@ -48,7 +48,7 @@ class AllaweeKeyPad extends StatelessWidget {
                                 child: SvgPicture.asset(_getBiometricType(type ?? BiometricType.iris),height: 50,)));
                     }
                     // if (keyCell == 'left' && path == "fund") {
-                    //   return  AllaweeKeyCell(
+                    //   return  newprojectKeyCell(
                     //     keyColor: keyColor,
                     //     value: "00",
                     //     onTap: (val) {
@@ -58,7 +58,7 @@ class AllaweeKeyPad extends StatelessWidget {
                     // }
                     if (keyCell == 'right') {
                       return rightAction ??
-                          AllaweeKeyCell.withChild(
+                          newprojectKeyCell.withChild(
                             value: 'backspace',
                             onTap: (val) {
                               onKeyPress(val);
@@ -69,7 +69,7 @@ class AllaweeKeyPad extends StatelessWidget {
                             ),
                           );
                     }
-                    return AllaweeKeyCell(
+                    return newprojectKeyCell(
                       keyColor: keyColor,
                       value: keyCell,
                       onTap: (val) {
@@ -100,21 +100,21 @@ String _getBiometricType(BiometricType type) {
   }
 }
 
-class AllaweeKeyCell extends StatelessWidget {
+class newprojectKeyCell extends StatelessWidget {
   final onTap;
   final Widget? child;
   final String? value;
   final bool? _hasChild;
   final Color? keyColor;
 
-  AllaweeKeyCell({
+  newprojectKeyCell({
     this.onTap,
     this.keyColor,
     @required this.value,
   })  : child = Offstage(),
         _hasChild = false;
 
-  AllaweeKeyCell.withChild({
+  newprojectKeyCell.withChild({
     this.onTap,
     this.child,
     this.value,

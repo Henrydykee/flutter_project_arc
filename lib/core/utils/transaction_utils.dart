@@ -1,4 +1,4 @@
-// import 'package:allawee_app/features/transaction/data/model/transaction_response_model.dart';
+// import 'package:newproject_app/features/transaction/data/model/transaction_response_model.dart';
 //
 // class TransactionUtils {
 //
@@ -22,7 +22,7 @@
 //       case "transactions.account-funding":
 //         return "${transactionResponseModel?.data?.accountName ??"Account funding"}";
 //       case "user.welcome":
-//         return "Welcome to Allawee";
+//         return "Welcome to newproject";
 //       case "confirm.email.token":
 //         return "Email Confirmation";
 //       case "account-funding":
@@ -73,7 +73,7 @@
 //       case "transactions.account-funding":
 //         return "Account funding";
 //       case "user.welcome":
-//         return "Welcome to Allawee";
+//         return "Welcome to newproject";
 //       case "confirm.email.token":
 //         return "Email Confirmation";
 //       case "account-funding":
@@ -109,7 +109,7 @@
 //       case "transactions.card-order":
 //         return "Card order";
 //       case "cards.linked":
-//         return "Your allawee card has been linked";
+//         return "Your newproject card has been linked";
 //       default:
 //         return type;;
 //     }

@@ -1,9 +1,9 @@
 // import 'dart:async';
 //
-// import 'package:allawee_app/core/platform/color.dart';
-// import 'package:allawee_app/core/presentation/widgets/text_holder.dart';
-// import 'package:allawee_app/features/authentication/presentation/pages/login/login_screen.dart';
-// import 'package:allawee_app/features/home/presentation/pages/home_screen.dart';
+// import 'package:newproject_app/core/platform/color.dart';
+// import 'package:newproject_app/core/presentation/widgets/text_holder.dart';
+// import 'package:newproject_app/features/authentication/presentation/pages/login/login_screen.dart';
+// import 'package:newproject_app/features/home/presentation/pages/home_screen.dart';
 // import 'package:flutter/material.dart';
 // import 'package:gap/gap.dart';
 // import 'package:intl/intl.dart';
@@ -11,7 +11,7 @@
 //
 // import '../../../features/home/presentation/pages/nav_bar.dart';
 // import '../../../features/onboarding/presentation/state/onboarding_provider.dart';
-// import 'allawee_app_bar.dart';
+// import 'newproject_app_bar.dart';
 //
 // class kycVerifiedScreen extends StatefulWidget {
 //   String? path;
@@ -31,7 +31,7 @@
 //               context,
 //               PageRouteBuilder(
 //                 transitionDuration: const Duration(milliseconds: 800),
-//                 pageBuilder: (context, animation, secondaryAnimation) => AllaweeNavBar(),
+//                 pageBuilder: (context, animation, secondaryAnimation) => newprojectNavBar(),
 //                 transitionsBuilder: (context, animation, secondaryAnimation, child) {
 //                   var begin = Offset(0.0, 1.0);
 //                   var end = Offset.zero;
@@ -52,9 +52,9 @@
 //       Provider.of<OnboardingProvider>(context, listen: false).getUser();
 //     });
 //     return Scaffold(
-//       backgroundColor: AllaweeColor.dark_blue,
-//       appBar: AllaweeSecondaryAppBar(
-//         color: AllaweeColor.dark_blue,
+//       backgroundColor: newprojectColor.dark_blue,
+//       appBar: newprojectSecondaryAppBar(
+//         color: newprojectColor.dark_blue,
 //         allowPop: false,
 //       ),
 //       body: Padding(

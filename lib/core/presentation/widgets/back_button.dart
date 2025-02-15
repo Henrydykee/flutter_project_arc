@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class AllaweeBackButton extends StatelessWidget {
+class newprojectBackButton extends StatelessWidget {
   final Function()? onTap;
 
-  AllaweeBackButton({this.onTap});
+  newprojectBackButton({this.onTap});
 
   @override
   Widget build(BuildContext context) {
