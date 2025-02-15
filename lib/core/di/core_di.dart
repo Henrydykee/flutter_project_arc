@@ -3,7 +3,6 @@
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:localstorage/localstorage.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import '../data/database/db_config.dart';
 import '../data/memory/cache_helpers.dart';
 import '../data/network/network_config.dart';
 import '../data/network/network_interceptor.dart';
@@ -18,7 +17,7 @@ import 'di_config.dart';
 Future<void> coreInjector() async {
   inject.registerSingleton<SecuredStorage>(SecuredStorageImpl());
   inject.registerSingleton<SharedPreferences>(await SharedPreferences.getInstance());
-  inject.registerSingleton<LocalStorage>(await LocalStorage("allawee_app"));
+  inject.registerSingleton<LocalStorage>(await LocalStorage("newproject_app"));
   inject.registerSingleton<DeviceManager>(DeviceManager.instance);
   inject.registerSingleton<DeviceInfoPlugin>(DeviceInfoPlugin());
   inject.registerFactory<NetworkInterceptor>(() => NetworkInterceptor(networkConfigInterface: inject(), deviceInfo:  inject()));

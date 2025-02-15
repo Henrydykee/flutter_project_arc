@@ -1,30 +1,29 @@
-
-import 'package:allawee_business/core/presentation/widgets/text_holder.dart';
+import 'package:new_project/core/presentation/widgets/text_holder.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import '../../platform/color.dart';
 
-class AllaweeAppBar extends StatelessWidget implements PreferredSize {
+class newprojectAppBar extends StatelessWidget implements PreferredSize {
   final String? title;
   final String? image;
   final Function()? onTap;
   final Widget? widget;
   final Color? color;
 
-  AllaweeAppBar({this.title, this.image, this.onTap, this.color, this.widget});
+  newprojectAppBar({this.title, this.image, this.onTap, this.color, this.widget});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 4),
       child: AppBar(
-        backgroundColor: AllaweeBusinessColor.white,
+        backgroundColor: newprojectColor.white,
         elevation: 0.0,
         automaticallyImplyLeading: false,
         title: TextHolder(
           title: title ?? "",
           size: 24,
-          color: AllaweeBusinessColor.dark_blue,
+          color: newprojectColor.dark_blue,
           fontWeight: FontWeight.w600,
         ),
         actions: [
@@ -35,7 +34,10 @@ class AllaweeAppBar extends StatelessWidget implements PreferredSize {
                 image ?? "assets/svg/back_button.svg",
                 height: 30,
                 width: 30,
-                color: color ?? AllaweeBusinessColor.dark_blue,
+                colorFilter: ColorFilter.mode(
+                  color ?? newprojectColor.dark_blue,
+                  BlendMode.srcIn
+                ),
               )),
           SizedBox(
             width: 20,
@@ -47,15 +49,14 @@ class AllaweeAppBar extends StatelessWidget implements PreferredSize {
   }
 
   @override
-  // TODO: implement child
   Widget get child => throw UnimplementedError();
 
   @override
   Size get preferredSize => new Size(25, 50);
 }
 
-class AllaweeSecondaryAppBar extends StatelessWidget implements PreferredSize {
-  const AllaweeSecondaryAppBar({
+class SecondaryAppBar extends StatelessWidget implements PreferredSize {
+  const SecondaryAppBar({
     this.title,
     this.actionOnTap,
     this.image,
@@ -91,7 +92,7 @@ class AllaweeSecondaryAppBar extends StatelessWidget implements PreferredSize {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: color ?? AllaweeBusinessColor.white,
+      backgroundColor: color ?? newprojectColor.white,
       elevation: 0.0,
       centerTitle: true,
       // bottom: bottom as PreferredSizeWidget,
@@ -113,7 +114,7 @@ class AllaweeSecondaryAppBar extends StatelessWidget implements PreferredSize {
       ),
       title:TextHolder(
         title: title ?? "",
-        color: textColor ?? AllaweeBusinessColor.white,
+        color: textColor ?? newprojectColor.white,
         fontWeight: FontWeight.w700,
         size: 23,
       ),
@@ -136,7 +137,7 @@ class AllaweeSecondaryAppBar extends StatelessWidget implements PreferredSize {
          onTap: searchOnTap,
          child: Padding(
             padding: const EdgeInsets.only(right: 20),
-            child: Icon(Icons.search,color: AllaweeBusinessColor.white,),
+            child: Icon(Icons.search,color: newprojectColor.white,),
           ),
        ) : SizedBox()
       ],
@@ -144,7 +145,6 @@ class AllaweeSecondaryAppBar extends StatelessWidget implements PreferredSize {
   }
 
   @override
-// TODO: implement child
   Widget get child => throw UnimplementedError();
 
   @override

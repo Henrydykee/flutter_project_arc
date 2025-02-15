@@ -84,8 +84,6 @@ class BioMetricManager {
           logger.e(e);
         }
       } else {
-        //TODO: LOOK FOR HOW TO AUTHENTICATE THIS TYPE OF USERS
-        // Handle authentication for device without faceId and finger Print
         // try {
         //   bool deviceAuthenticated = await DeviceUnlock().request(localizedReason: "Enter pin to verify your account");
         //   if (deviceAuthenticated != null && deviceAuthenticated) {

@@ -1,11 +1,13 @@
-import 'package:allawee_business/core/presentation/widgets/text_holder.dart';
+// ignore_for_file: deprecated_member_use
+
+import 'package:new_project/core/presentation/widgets/text_holder.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:gap/gap.dart';
 
 import '../../platform/color.dart';
 
-class AllaweeTextField extends StatelessWidget {
+class newprojectTextField extends StatelessWidget {
   final String? hinttitle;
   final String? title;
   final TextEditingController? controller;
@@ -34,7 +36,7 @@ class AllaweeTextField extends StatelessWidget {
   final String? Function(String?)? validator;
   final Function(String)? onChange;
 
-  AllaweeTextField(
+  newprojectTextField(
       {this.onTap,
       this.maxLength,
         this.textColor,
@@ -70,7 +72,7 @@ class AllaweeTextField extends StatelessWidget {
       children: [
        showTitle == false ? SizedBox() : TextHolder(
           title: title ?? "",
-          color: AllaweeBusinessColor.grey,
+          color: newprojectColor.grey,
           size: 16,
           fontWeight: FontWeight.w600,
         ),
@@ -86,7 +88,7 @@ class AllaweeTextField extends StatelessWidget {
           validator: validator,
           textCapitalization: TextCapitalization.sentences,
           keyboardType: keyboardType ?? TextInputType.text,
-          cursorColor: cursorColor ?? AllaweeBusinessColor.black_3,
+          cursorColor: cursorColor ?? newprojectColor.black_3,
           focusNode: currentFocusNode,
           inputFormatters: inputFormatters,
           maxLines: maxLines ?? 1,
@@ -105,7 +107,7 @@ class AllaweeTextField extends StatelessWidget {
               suffix: suffix,
               counterText: "",
               counter: counter,
-              fillColor: fillColor ?? AllaweeBusinessColor.white,
+              fillColor: fillColor ?? newprojectColor.white,
               filled: true,
               hintStyle: hintstyle,
               prefix: prefix,
@@ -113,22 +115,22 @@ class AllaweeTextField extends StatelessWidget {
               border: InputBorder.none,
               enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.circular(5.0)),
-                      borderSide: BorderSide(color: AllaweeBusinessColor.black_3.withOpacity(0.5)),
+                      borderSide: BorderSide(color: newprojectColor.black_3.withOpacity(0.5)),
                     ),
               focusedErrorBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.all(Radius.circular(5.0)),
-                borderSide: BorderSide(color: AllaweeBusinessColor.green),
+                borderSide: BorderSide(color: newprojectColor.green),
               ),
               errorBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.all(Radius.circular(5.0)),
-                borderSide: BorderSide(color: AllaweeBusinessColor.black_3.withOpacity(0.5)),
+                borderSide: BorderSide(color: newprojectColor.black_3.withOpacity(0.5)),
               ),
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.all(Radius.circular(5.0)),
-                borderSide: BorderSide(color: AllaweeBusinessColor.green),
+                borderSide: BorderSide(color: newprojectColor.green),
               ),
               hintText: hinttitle,
-              helperStyle: TextStyle(color: AllaweeBusinessColor.black_3, fontSize: fontSize ?? 14)),
+              helperStyle: TextStyle(color: newprojectColor.black_3, fontSize: fontSize ?? 14)),
         ),
       ],
     );

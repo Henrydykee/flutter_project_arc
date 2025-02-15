@@ -1,5 +1,3 @@
-import 'package:dartz/dartz.dart';
-
 
 /// Requires [NoParams]
 // class UserState implements UseCase<UserModel, NoParams> {

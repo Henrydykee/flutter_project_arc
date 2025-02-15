@@ -1,4 +1,4 @@
-// import 'package:allawee_app/core/presentation/widgets/text_holder.dart';
+// import 'package:newproject_app/core/presentation/widgets/text_holder.dart';
 // import 'package:cached_network_image/cached_network_image.dart';
 // import 'package:fl_chart/fl_chart.dart';
 // import 'package:flutter/cupertino.dart';
@@ -204,7 +204,7 @@
 //                     return FlSpot(entry.key.toDouble(), entry.value);
 //                   }).toList(),
 //                   isCurved: true,
-//                   color: AllaweeColor.green,
+//                   color: newprojectColor.green,
 //                   dotData: FlDotData(show: false),
 //                   belowBarData: BarAreaData(show: false),
 //                 ),
@@ -440,7 +440,7 @@
 //                             TextHolder(
 //                               title: "12 Transactions",
 //                               fontWeight: FontWeight.w400,
-//                               color: AllaweeColor.grey,
+//                               color: newprojectColor.grey,
 //                             ),
 //                             Gap(24),
 //                             MoneyTextHolder(
@@ -626,7 +626,7 @@
 //                             : TextHolder(
 //                                 title: transaction.tags?[0],
 //                                 size:  transaction.tags?[0] == null || transaction.tags?[0] == "" ? 0 : 14,
-//                                 color: AllaweeColor.grey,
+//                                 color: newprojectColor.grey,
 //                               ),
 //                       ],
 //                     ),
@@ -683,7 +683,7 @@
 //                     color: Colors.white,
 //                   ),
 //                   TextHolder(
-//                     title: "Add your BVN to activate your allawee account",
+//                     title: "Add your BVN to activate your newproject account",
 //                     color: Colors.white,
 //                   ),
 //                 ],

@@ -1,9 +1,9 @@
-import 'package:allawee_business/core/presentation/widgets/text_holder.dart';
+import 'package:new_project/core/presentation/widgets/text_holder.dart';
 import 'package:flutter/material.dart';
 
 import '../../platform/color.dart';
 
-class AllaweeButton extends StatelessWidget {
+class newprojectButton extends StatelessWidget {
   final Color? btnColor;
   final String? title;
   final Function()? onTap;
@@ -15,7 +15,7 @@ class AllaweeButton extends StatelessWidget {
   final String? assetImage;
 
 
-  AllaweeButton(
+  newprojectButton(
       {this.btnColor,
       this.title,
       this.onTap,
@@ -38,9 +38,9 @@ class AllaweeButton extends StatelessWidget {
         width: width ?? double.infinity,
         decoration: isdisabled == true ?
         BoxDecoration(
-            border: Border.all(color: AllaweeBusinessColor.grey),
+            border: Border.all(color: newprojectColor.grey),
             borderRadius: BorderRadius.circular(5),
-          color: AllaweeBusinessColor.light_green,
+          color: newprojectColor.light_green,
         )
             : BoxDecoration(
           border: Border.all(color: Colors.black,width: 0.5),
@@ -53,7 +53,7 @@ class AllaweeButton extends StatelessWidget {
             child: TextHolder(
               title: title  ?? "",
               size: textSize ?? 18,
-              color: isdisabled == true ? AllaweeBusinessColor.grey : (textColor ?? Colors.black),
+              color: isdisabled == true ? newprojectColor.grey : (textColor ?? Colors.black),
               fontWeight: FontWeight.w600,
             ),
           ),
@@ -71,9 +71,9 @@ class ViewAllButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Container(
       decoration: BoxDecoration(
-          color: AllaweeBusinessColor.light_green,
+          color: newprojectColor.light_green,
           borderRadius: BorderRadius.circular(8),
-          border: Border.all(color: AllaweeBusinessColor.green)),
+          border: Border.all(color: newprojectColor.green)),
       child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 11),
           child: TextHolder(

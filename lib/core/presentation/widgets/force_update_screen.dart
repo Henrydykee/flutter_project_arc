@@ -1,11 +1,11 @@
 // import 'dart:io';
-// import 'package:allawee_business/core/presentation/widgets/text_holder.dart';
+// import 'package:new_project/core/presentation/widgets/text_holder.dart';
 // import 'package:flutter/material.dart';
 // import 'package:flutter_svg/flutter_svg.dart';
 // import 'package:gap/gap.dart';
 // import 'package:url_launcher/url_launcher.dart';
 //
-// import 'allawee_app_bar.dart';
+// import 'newproject_app_bar.dart';
 // import 'button.dart';
 //
 // class ForceUpdateScreen extends StatefulWidget {
@@ -20,7 +20,7 @@
 //   Widget build(BuildContext context) {
 //     return Scaffold(
 //       backgroundColor: Colors.white,
-//       appBar: AllaweeSecondaryAppBar(
+//       appBar: newprojectSecondaryAppBar(
 //         allowPop: false,
 //       ),
 //       body: Padding(
@@ -49,12 +49,12 @@
 //                 ),
 //               ],
 //             ),
-//             AllaweeButton(
+//             newprojectButton(
 //               title: "Update my app",
 //                 onTap: () async {
 //                   String url = Platform.isAndroid
-//                       ? "https://play.google.com/store/apps/details?id=com.allaweepersonal.mobile"
-//                       : "https://apps.apple.com/ng/app/allawee/id6473426951";
+//                       ? "https://play.google.com/store/apps/details?id=com.newprojectpersonal.mobile"
+//                       : "https://apps.apple.com/ng/app/newproject/id6473426951";
 //                   if (await canLaunch(url)) {
 //                     await launch(url);
 //                   }

@@ -1,7 +1,5 @@
-import 'package:currency_text_input_formatter/currency_text_input_formatter.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/services.dart';
-import 'package:intl/intl.dart';
+
 
 onKeyPressed(String s, TextEditingController controller, {int length = 6}) {
   if (s.toLowerCase() == 'clear') {
@@ -10,7 +8,7 @@ onKeyPressed(String s, TextEditingController controller, {int length = 6}) {
   }
   if (s.toLowerCase() == 'backspace') {
     final currentText = controller.text;
-    if (currentText == null || currentText.isEmpty) return;
+    if (currentText.isEmpty) return;
     if (currentText.length == 1) controller.text = '';
     controller.text = currentText.substring(0, currentText.length - 1);
     return;
@@ -31,7 +29,7 @@ void fundonKeyPressed(String s, TextEditingController controller, {int length = 
   }
   if (s.toLowerCase() == 'backspace') {
     final currentText = controller.text;
-    if (currentText == null || currentText.isEmpty) return;
+    if (currentText.isEmpty) return;
     if (currentText.length == 1) {
       controller.text = '';
       return;

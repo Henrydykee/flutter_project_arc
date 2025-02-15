@@ -1,4 +1,3 @@
-import 'package:device_manager/device_manager.dart';
 import 'package:dio/dio.dart';
 import '../../di/di_config.dart';
 import '../../platform/storage/secured_storage.dart';
@@ -56,7 +55,7 @@ class NetworkInterceptor extends InterceptorsWrapper {
   /// When error occurs, this interceptor handles it
   @override
   void onError(
-    DioError err,
+    DioException err,
     ErrorInterceptorHandler handler,
   ) {
     return super.onError(err, handler);

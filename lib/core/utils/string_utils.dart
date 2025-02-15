@@ -1,10 +1,10 @@
 class StringUtils {
-  static bool isNullOrEmpty(String value) {
+  static bool isNullOrEmpty(String? value) {
     return value == null || value.isEmpty;
   }
 
-  static bool isNotNullOrEmpty(String value) {
-    return value != null || value.isNotEmpty;
+  static bool isNotNullOrEmpty(String? value) {
+    return value != null && value.isNotEmpty;
   }
 
   static String removeCharacter(String value) {

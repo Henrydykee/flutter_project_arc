@@ -142,6 +142,4 @@ NetworkServiceResponse handleException(DioException e, StackTrace trace) {
   }
 }
 
-//TODO Backend needs to response with Unique codes for errors.
-// TODO To prevent unreadable errors to propagate to UI
 final errorCodes = {"ERROR_CODE": "Custom message"};

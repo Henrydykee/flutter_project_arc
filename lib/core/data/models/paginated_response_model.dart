@@ -1,16 +1,22 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-part 'paginated_response_model.g.dart';
-part 'paginated_response_model.freezed.dart';
-
 @freezed
-class PaginatedModel with _$PaginatedModel {
-  const factory PaginatedModel({
-    @JsonKey(name: 'page') required int? page,
-    @JsonKey(name: 'pages') required int? pages,
-    @JsonKey(name: 'count') required int? count,
-  }) = _PaginatedModel;
+class PaginatedModel {
+  final int? page;
+  final int? pages;
+  final int? count;
 
-  factory PaginatedModel.fromJson(Map json) => _$PaginatedModelFromJson(
-      Map.castFrom<dynamic, dynamic, String, dynamic>(json));
+  const PaginatedModel({
+    required this.page,
+    required this.pages,
+    required this.count,
+  });
+
+  factory PaginatedModel.fromJson(Map<String, dynamic> json) {
+    return PaginatedModel(
+      page: json['page'] as int?,
+      pages: json['pages'] as int?,
+      count: json['count'] as int?,
+    );
+  }
 }

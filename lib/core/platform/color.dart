@@ -1,7 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 
-class AllaweeBusinessColor{
+class newprojectColor{
   static const light_blue = Color(0xFF4E84FF);
   static const dark_blue =Color(0xFF001240);
   static const home_blue =Color(0xFF05081E);
@@ -33,4 +33,5 @@ class AllaweeBusinessColor{
   static const blue =  Color(0xFF2F80ED);
   static const negative_bg = Color(0xFFFEE6E6);
   static const red = Color(0xFFE84343);
+  
 }

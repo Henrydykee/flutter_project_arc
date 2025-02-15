@@ -47,10 +47,7 @@ class FormatUtils {
 }
 
 extension Precision on double {
-  String toFloorString(int fractionDigits) {
-    if (fractionDigits == null) {
-      fractionDigits = 2;
-    }
+  String toFloorString([int fractionDigits = 2]) {
     num mod = pow(10, fractionDigits.toDouble());
     String res =
         ((this * mod).floor().toDouble() / mod).toStringAsFixed(fractionDigits);

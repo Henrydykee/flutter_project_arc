@@ -1,5 +1,5 @@
 
-import 'package:allawee_business/core/presentation/widgets/text_holder.dart';
+import 'package:new_project/core/presentation/widgets/text_holder.dart';
 import 'package:flutter/material.dart';
 
 class ViewPagerHeader extends StatelessWidget {

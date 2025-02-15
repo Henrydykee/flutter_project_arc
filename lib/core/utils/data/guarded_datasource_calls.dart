@@ -1,4 +1,6 @@
 
+// ignore_for_file: unused_catch_stack
+
 import 'dart:developer';
 import '../../data/database/db_exceptions.dart';
 import '../../data/network/network_exceptions.dart';
