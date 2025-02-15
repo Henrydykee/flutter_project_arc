@@ -29,6 +29,8 @@ class _AccountCreatedSuccessfulScreenState extends State<AccountCreatedSuccessfu
   @override
   Widget build(BuildContext context) {
     WidgetsBinding.instance.addPostFrameCallback((_) {
+
+  
     //  Provider.of<OnboardingProvider>(context, listen: false).getUser();
     });
     return Scaffold(
