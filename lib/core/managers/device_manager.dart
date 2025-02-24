@@ -44,10 +44,10 @@ class DeviceManager {
       await inject<SecuredStorage>().add(key: SecureStorageStrings.DEVICE_ID, value: deviceId);
     }
     return RegistrationRequestModel(
-      os_version: iosData.systemVersion,
-      os_type: AppString.IOS,
+      osVersion: iosData.systemVersion,
+      osType: AppString.IOS,
       ip: ipAddress,
-      device_id: deviceId,
+      deviceId: deviceId,
       brand: iosData.model,
       model: iosData.localizedModel,
     );
@@ -62,12 +62,13 @@ class DeviceManager {
     }
 
     return RegistrationRequestModel(
-        os_version: androidData.version.release,
-        os_type: AppString.ANDROID,
-        ip: ipAddress,
-        device_id: deviceId,
-        brand: androidData.brand,
-        model: androidData.model);
+      osVersion: androidData.version.release,
+      osType: AppString.ANDROID,
+      ip: ipAddress,
+      deviceId: deviceId,
+      brand: androidData.brand,
+      model: androidData.model,
+    );
   }
 
   Future<String?> _iOSGetIPAddress() async {

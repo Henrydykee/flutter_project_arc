@@ -39,11 +39,12 @@ mixin class ProviderState<T> {
 
   subscribeToConnectionState(Function callback) async {
     try {
-      _connectionState = await (Connectivity().checkConnectivity());
+      final results = await (Connectivity().checkConnectivity());
+      _connectionState = results.first;  // Take first result
       connectivitySubscription = Connectivity()
           .onConnectivityChanged
-          .listen((ConnectivityResult result) {
-        _connectionState = result;
+          .listen((results) {
+        _connectionState = results.first;  // Take first result
         if (_connectionChangeCount < 1) {
           _connectionChangeCount++;
         } else {

@@ -4,3 +4,5 @@ abstract class SecuredStorage {
   Future delete({key});
   Future deleteAll();
 }
+
+
