@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #cd ios
 #export LC_ALL=en_US.UTF-8
 ##pod deintegrate
@@ -14,7 +16,7 @@ cd ios
 
 pod cache clean --all
 
-Pod clean
+pod clean
 
 pod deintegrate
 
