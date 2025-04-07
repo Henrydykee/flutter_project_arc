@@ -30,6 +30,7 @@ class newprojectAppBar extends StatelessWidget implements PreferredSize {
           widget ??
           GestureDetector(
               onTap: onTap ,
+            
               child: SvgPicture.asset(
                 image ?? "assets/svg/back_button.svg",
                 height: 30,
