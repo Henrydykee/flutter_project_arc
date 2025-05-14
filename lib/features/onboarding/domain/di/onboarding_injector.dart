@@ -6,8 +6,6 @@ import '../usecases/get_user.dart';
 import '../usecases/onboarding_usecase.dart';
 
 Future<void> onboardingInjector() async {
-  // inject.registerSingleton<KycValidator>(KycValidator.instance);
-  // inject.registerLazySingleton<OnboardingLocalDataSource>(() => OnboardingLocalDataSourceImpl(inject()));
   inject.registerLazySingleton<OnboardingRemoteDataSource>(() => OnboardingRemoteDataSourceImpl(inject()));
   inject.registerLazySingleton<OnboardingRepository>(() => OnboardingRepositoryImpl(inject()));
   inject.registerLazySingleton<GetUser>(() => GetUser(inject()));
